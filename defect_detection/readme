@@ -1,1 +1,15 @@
+Uses code from: https://github.com/JohnnyHopp/PaDiM-EfficientNetV2/ to run the PaDiM (https://arxiv.org/pdf/2011.08785.pdf) anomaly detection algorithm. 
 
+To run,  use: 
+
+python main_ngc_defect.py --data_path PATH_TO_DATA --save_path PATH_TO_SAVED_DATA --arch FEATURE_EXTRACTOR 
+
+available feature extractor architectures are: 'resnet18', 'wide_resnet50_2', 'efficientnetv2_m_in21ft1k', 'efficientnetv2_xl_in21ft1k', 'efficientnet_b5_ns', 'efficientnet_b6_ns', 'efficientnet_b7_ns','efficientnet_l2_ns_475'], default='efficientnetv2_m_in21ft1k'
+
+Requirements: 
+
+pytorch > 1.12 
+tqdm
+sklearn
+matplotlib
+timm
